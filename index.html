@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>absolute</title>
+	<style type="text/css">
+	.wrap{width:50%; margin:auto;}
+	section{height:400px;  margin-bottom:30px; position:relative; perspective: 500px;}
+	
+	.f1{width:100px; height:100px; background:black; position:absolute: color:white;}
+	.flower{width:1200px; z-index:1; position:absolute; animation:ro6s infinite alternate linear; display:block;
+
+animation: ro 10s infinite linear; display:block;}
+
+	@keyframes ro{
+		from{}
+		to{transform:rotate3D(1,1,0,360deg);}
+	}
+</style>
+</head>
+<body>
+	<div class="f1" style="left:100px; bottom:100px; position:fixed;">
+		top
+	</div>
+	<div calss="wrap">
+		
+		<section class="green">
+			<div class="f1" style="right:50px; top:0px;"></div>
+				<img src="2.jpg" class="flower";>
+		</section>
+		
+		<section class="red">
+			<div class="f1" style="right:100px; top:20px;"></div>
+				<img src="flower1.png" class="flower";>
+
+		</section>
+		
+
+		<section class="blue">
+			<div class="f1" style="left:200px; top:200px;"></div>
+				<img src="flower.png" class="flower";>
+		</section>
+</secton>
+</div>
+</body>
+</html>
